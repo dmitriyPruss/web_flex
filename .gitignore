@@ -1,0 +1,6 @@
+#ignore folder vscode
+.vscode/
+#ignore desktop.ini file
+desktop.ini
+#don`t ignore .gitignore file
+!.gitignore
