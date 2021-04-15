@@ -8,7 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
 }
 /* header */
 header {
@@ -103,13 +104,10 @@ main {
   background: linear-gradient(rgb(127, 146, 182), rgb(181, 212, 230));
 }
 main > article {
-  width: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1.3em;
-  overflow-y: auto;
 }
 article > img {
   margin-top: 30px;
@@ -119,28 +117,31 @@ article > img {
   border-radius: 15px;
   box-shadow: -25px -25px 20px rgb(59, 58, 58);
 }
+#inner{
+  overflow-y: auto;
+  padding: 5px 30px;
+}
 #inner h2 {
   height: 30px;
   font-size: 1.2em;
   text-align: center;
+  text-decoration: underline rgb(65, 65, 182);
 }
 #inner p {
-  width: 90%;
   height: 200px;
+  text-align: center;
 }
 .invisible {
   display: none;
 }
 /* footer */
-footer {
+main+p {
   width: 100%;
   height: 50px;
   background: linear-gradient(rgb(181, 212, 230), white);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer > p {
   text-align: center;
   font-variant: small-caps;
 }
